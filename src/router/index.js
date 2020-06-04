@@ -19,17 +19,17 @@ export default new VueRouter({
     {
       path: "/cats",
       name: "cats",
-      component: Cats
+      component: Cats,
     },
     {
       path: "/dogs",
       name: "dogs",
-      component: Dogs
+      component: Dogs,
     },
     {
-      path: "/pets:id",
+      path: "/pets/:species/:id",
       name: "pet",
-      component: Pet
-    }
+      component: Pet,
+    },
   ],
 });
